@@ -6,3 +6,20 @@ sub check-fermat($a, $b, $c, $n) {
         say 'No, that doesn\'t work';
     }
 }
+
+# 2
+sub prompt-fermat() {
+    my ($a, $b, $c, $n);
+    say 'Please enter values to check Fermat\'s theorem with.';
+    print '$a:';
+    $a = get;
+    print '$b:';
+    $b = get;
+    print '$c:';
+    $c = get;
+    print '$n:';
+    $n = get;
+    check-fermat($a, $b, $c, $n);
+}
+
+prompt-fermat();
