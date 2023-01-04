@@ -1,12 +1,3 @@
-sub recurse($n, $s) {
-    if ($n == 0) {
-        say $s;
-    } else {
-        recurse $n - 1, $n + $s;
-    }
-}
-recurse(-1, 0);
-
 # 1
 # Infinite recursion
 
